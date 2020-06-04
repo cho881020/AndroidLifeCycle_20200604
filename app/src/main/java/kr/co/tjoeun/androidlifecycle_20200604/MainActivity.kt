@@ -14,6 +14,13 @@ class MainActivity : AppCompatActivity() {
 
         Log.d("메인화면", "onCreate 실행됨")
 
+        var name1 = "조경진"
+        var name2 = "아이유"
+
+        name1 = name2
+
+        Log.d("이름", name1)
+
 
         goToOtherBtn.setOnClickListener {
             val myIntent = Intent(this, OtherActivity::class.java)
@@ -26,6 +33,16 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
 
         Log.d("메인화면", "onResume 실행")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d("메인화면", "onPause 실행")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d("메인화면", "onDestroy 실행")
     }
 
 }
