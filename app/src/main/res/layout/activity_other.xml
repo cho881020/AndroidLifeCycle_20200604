@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".MainActivity">
+    tools:context=".OtherActivity">
 
     <Button
-        android:id="@+id/goToOtherBtn"
+        android:id="@+id/backBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="다른 화면으로 이동" />
+        android:text="돌아가기" />
 
 </LinearLayout>
